@@ -6,7 +6,6 @@ https://gchq.github.io/CyberChef
 Videos from intranet of 42
 
 ### How to solve it
-
 1. If you watch the videos it talks about finding files used by flag00 user : 
 ```
 find / -user flag00 2> /dev/null searches for files in the root directory (/) that are owned by the user flag00,
