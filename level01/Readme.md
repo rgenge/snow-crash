@@ -1,26 +1,25 @@
 # Level00
 
 ### Tools
-https://gchq.github.io/CyberChef
-Videos from intranet of 42
+John The Ripper 
 
 ### How to solve it
 
-1. If you watch the videos it talks about finding files used by flag00 user : 
+1. After getting the first flag we try the same command from flag00, it did not work, then we tried:
 ```
-find / -user flag00 2> /dev/null searches for files in the root directory (/) that are owned by the user flag00,
+cat /etc/passwd
 ```
-2. Then we have two files and using cat we get .
+2. Then we have many files and one name gets our attention :
 ```
- cdiiddwpgswtgt
+flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
 ```
-3. We try to su flag00 but the password doesnt'work, so it is encoded, then we try cyberchef, and using ROT13 that is Caesar Cipher we get :
+3. We use that with John The Ripper and get in return : 
 ```
- nottoohardhere
+ abcdefg
 ```
-4. Now we have the password for su flag00, we login and run gettheflag
+4. Now we have the password for su flag01, we login and run gettheflag
 ```
- x24ti5gi3x0ol2eh4esiuxias
+f2av5il02puano7naaf6adaaf
 ```
 ### How to protect
  - Use better and improved enconding options
