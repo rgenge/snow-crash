@@ -1,23 +1,22 @@
 # Level00
 
 ### Tools
-https://gchq.github.io/CyberChef
+tcpdump
 
-Videos from intranet of 42
 
 ### How to solve it
 
-1. If you watch the videos it talks about finding files used by flag00 user : 
+1. After loging in using ssh in level02@(vmIP): 
 ```
-find / -user flag00 2> /dev/null searches for files in the root directory (/) that are owned by the user flag00,
+ssh level02@000.000.000.000 -p 4242
 ```
-2. Then we have two files and using cat we get .
+2. We use the ls command and it shows a pcap file called level02.
 ```
- cdiiddwpgswtgt
+level02.pcap
 ```
-3. We try to su flag00 but the password doesnt'work, so it is encoded, then we try cyberchef, and using ROT13 that is Caesar Cipher we get :
+3. Then we have to try to check whats inside it we use tcpdump and get some ips communications.
 ```
- nottoohardhere
+tcpdump -r level02.pcap 
 ```
 4. Now we have the password for su flag00, we login and run gettheflag
 ```
