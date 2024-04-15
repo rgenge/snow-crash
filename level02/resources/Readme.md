@@ -1,4 +1,4 @@
-# Level00
+# Level02
 
 ### Tools
 tcpdump
@@ -18,10 +18,22 @@ level02.pcap
 ```
 tcpdump -r level02.pcap 
 ```
-4. Now we have the password for su flag00, we login and run gettheflag
+4. It doesnt give us the info we need, so we need to track the whole file using wire shark so we copy it to our machine.
 ```
- x24ti5gi3x0ol2eh4esiuxias
+sudo scp -P 4242 level02@000.000.000.000:level02.pcap .
+```
+5. The we open the wireshark program and click with right mouse button and go to Follow->TCP Stream and there we see:
+```
+ft_wandr...NDRel.L0L
+```
+6. We try this as password and it doesnt work, the dot(.)is actually non-printable char, if we convert it to hexadecimal we get 7f, that is 127 in decimal and DEL in ASCII.
+```
+ft_waNDReL0L
+```
+6. Now we use this password and Voilá :
+```
+kooda2puivaav1idi4f57q8iq
 ```
 ### How to protect
- - Use better and improved enconding options
- - Try to hide better your passwords and never get it exposed in your machine
+ - If you use wireshark for your reports avoid saving the reports with sensitive information.
+ - If you work in a place and they might be using wireshark in this company, this is the company problem not yours.
