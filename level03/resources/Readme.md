@@ -1,4 +1,4 @@
-# Level02
+# Level03
 
 ### Tools
 strings command : https://ioflood.com/blog/strings-linux-command/
@@ -8,7 +8,7 @@ strings command : https://ioflood.com/blog/strings-linux-command/
 
 1. After loging in using ssh in level03@(vmIP): 
 ```
-ssh level02@000.000.000.000 -p 4242
+ssh level03@000.000.000.000 -p 4242
 ```
 2. We use the ls command and it shows level03 file
 ```
