@@ -1,4 +1,4 @@
-# Level02
+# Level05
 
 ### Tools
 
@@ -7,7 +7,7 @@
 
 1. After loging in using ssh in level05@(vmIP): 
 ```
-ssh level02@000.000.000.000 -p 4242
+ssh level05@000.000.000.000 -p 4242
 ```
 2. When loging in we get this message:
 ```
