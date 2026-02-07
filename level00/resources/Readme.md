@@ -14,7 +14,7 @@ find / -user flag00 2> /dev/null searches for files in the root directory (/) th
 ```
  cdiiddwpgswtgt
 ```
-3. We try to su flag00 but the password doesnt'work, so it is encoded, then we try cyberchef, and using ROT13 that is Caesar Cipher we get :
+3. We try to su flag00 but the password doesnt'work, so it is encoded, then we try cyberchef, and using ROT13 with 11 that is Caesar Cipher we get :
 ```
  nottoohardhere
 ```
