@@ -1,4 +1,4 @@
-# Level00
+# Level01
 
 ### Tools
 John The Ripper 
@@ -13,7 +13,7 @@ cat /etc/passwd
 ```
 flag01:42hDRfypTqqnw:3001:3001::/home/flag/flag01:/bin/bash
 ```
-3. We use that with John The Ripper and get in return : 
+3. We use that with John The Ripper using command john "password" and get in return : 
 ```
  abcdefg
 ```
