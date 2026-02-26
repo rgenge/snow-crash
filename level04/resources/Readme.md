@@ -9,7 +9,7 @@
 ```
 ssh level04@000.000.000.000 -p 4242
 ```
-2. We use the ls command and it shows level03 file
+2. We use the ls command and it shows level04 file
 ```
 level04.pl
 ```
