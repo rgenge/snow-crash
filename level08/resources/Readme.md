@@ -74,9 +74,13 @@ ln -s /home/user/level08/token /tmp/symlink08
 ./level08 /tmp/symlink08
 
 ```
-6. And Vouilá:
+6. Now we have this password:
 ```
-Check flag.Here is your token : quif5eloekouj29ke0vouxean
+quif5eloekouj29ke0vouxean
+```
+7. And with it we use su get flag08 and Vouilá:
+```
+Run getflag and here is your token : 25749xKZ8L7DkSCwJkT9dyv6f
 ```
 
 ### How to protect
