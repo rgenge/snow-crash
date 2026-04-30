@@ -39,12 +39,19 @@ def decode_level09(data):
     return decoded.decode(errors="ignore")
 
 ```
-5. The token file contains encoded data like f4kmm6p|=�p�n��DB�Du{��. Applying our decode script gives us:
+
+5. Copy the token file to local machine to get all characters.
+
+```
+scp -P 4242 level09@192.168.5.88:/home/user/level09/token ./token
+
+```
+6. The token file contains encoded data like f4kmm6p|=�p�n��DB�Du{��. Applying our decode script gives us:
 ```
 f3iji1ju5yuevaus41q1afiuq
 
 ```
-6. Now that we have the password we run su flag09 and:
+7. Now that we have the password we run su flag09 and:
 ```
 s5cAJpM8ev6XHw998pRWG728z
 ```
